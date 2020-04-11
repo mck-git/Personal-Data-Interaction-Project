@@ -1,10 +1,11 @@
-package com.example.trackedraft3
+package com.example.trackne
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import com.example.trackedraft3.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 const val EXTRA_MESSAGE = "com.example.trackedraft3.MESSAGE"
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
 
         middleButton.setOnClickListener{
-            val intent = Intent(this,Activity2::class.java)
+            val intent = Intent(this, Activity2::class.java)
             intent.putExtra("TestString", "Hello test this is good :)))")
             startActivity(intent)
         }

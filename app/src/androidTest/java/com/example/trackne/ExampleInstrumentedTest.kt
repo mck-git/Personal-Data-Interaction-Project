@@ -1,4 +1,4 @@
-package com.example.trackedraft3
+package com.example.trackne
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
