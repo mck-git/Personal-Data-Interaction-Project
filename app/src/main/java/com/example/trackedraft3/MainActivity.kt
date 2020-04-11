@@ -16,8 +16,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
         middleButton.setOnClickListener{
             val intent = Intent(this,Activity2::class.java)
+            intent.putExtra("TestString", "Hello test this is good :)))")
             startActivity(intent)
         }
     }
