@@ -1,6 +1,6 @@
 package data
 
-data class User (val nm : String = "Default")
+data class User (val nm : String)
 {
     var name : String = nm
     var habits : MutableList<Habit> = mutableListOf<Habit>()

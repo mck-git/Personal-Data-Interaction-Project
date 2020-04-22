@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+
 import com.example.trackedraft3.R
+import data.LogEntry
 import kotlinx.android.synthetic.main.activity_main.*
 
 const val EXTRA_MESSAGE = "com.example.trackedraft3.MESSAGE"
@@ -21,7 +23,9 @@ class MainActivity : AppCompatActivity() {
 
         middleButton.setOnClickListener{
             val intent = Intent(this, Activity2::class.java)
-            intent.putExtra("TestString", "Hello test this is good :)))")
+            var newLogEntry = LogEntry(curId)
+            curId++
+            intent.putExtra("NewLogEntry", newLogEntry)
             startActivity(intent)
         }
     }
